@@ -23,8 +23,10 @@ public class SimulatedAnnealing {
         double tempBestSoFar    = bestSoFar;
         double prob;
         
+        //while temp value still more than minTemp
         while(temp > minTemp){
             
+            //formating print
             System.out.print(String.format("%21s %3s", currentState.getX1(), "|"));
             System.out.print(String.format("%21s %3s", currentState.getX2(), "|"));
             System.out.print(String.format("%21s %3s", tempBestSoFar, " | "));
